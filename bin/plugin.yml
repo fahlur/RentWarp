@@ -1,0 +1,76 @@
+name: RentWarp
+version: 1.4.3 Pre-Gold Release
+description: Economy Warp Plugin
+author: Fahlur
+depend: [Vault]
+main: me.Fahlur.RentWarp.RentWarp
+
+commands:
+  rentwarp:
+      description: Main Command
+      aliases: [rw]
+      usage: /<command>
+  warp:
+      description: Warping command
+      aliases: [rwwarp,goto]
+      usage: /<command>
+  warpcost:
+      description: Displays current cost for a warp
+      aliases: [wc]
+      usage: /<command>  
+  colors:
+      description: List valid colors for greetings
+      aliases: [c]
+      usage: /<command>  
+  setwarp:
+      description: Creates a new warp
+      aliases: [addwarp, definewarp, claimwarp, createwarp]
+      usage: /<command>  
+  delwarp:
+      description: Creates a new warp
+      aliases: [remwarp, deletewarp, removewarp]
+      usage: /<command> 
+  movewarp:
+      description: Creates a new warp
+      aliases: [redefinewarp]
+      usage: /<command>  
+  mywarps:
+      description: Lists your own warps with expiration dates
+      aliases: [listmywarps]
+      usage: /<command>  
+  warplist:
+      description: Lists all warps
+      aliases: [warps]
+      usage: /<command>  
+      
+Permissions:
+  RentWarp.*:
+    description: Gives access to all player features
+    children:
+        RentWarp.Admin.Reload: true
+        RentWarp.Admin.Info: true
+        RentWarp.Admin.AddTime: true
+        RentWarp.Admin.Lock: true
+        RentWarp.Admin.DeleteWarp: true
+        RentWarp.Admin.SetOwner: true
+        RentWarp.Admin.CoolDownExempt: true
+        RentWarp.Admin.RequireSign: true
+        RentWarp.Admin.CostExempt: true
+        RentWarp.Admin.Rename: true
+        RentWarp.Player.*: true
+  RentWarp.Player.*:
+    description: Gives access to all player features
+    children:
+        RentWarp.Player.Help: true
+        RentWarp.Player.Tutorial: true
+        RentWarp.Player.ViewPrices: true
+        RentWarp.Player.Version: true
+        RentWarp.Player.Colors: true
+        RentWarp.Player.SetWarp: true
+        RentWarp.Player.DeleteWarp: true
+        RentWarp.Player.MoveWarp: true
+        RentWarp.Player.Info: true
+        RentWarp.Player.List: true
+        RentWarp.Player.AddTime: true
+        RentWarp.Player.SetGreet: true
+        RentWarp.Player.Warp: true

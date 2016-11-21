@@ -1,0 +1,31 @@
+Economy:
+  Cost2Create: 50000
+  Cost2Renew: 50000
+Settings:
+  TutorialURL: 'https://github.com/fahlur/RentWarp/wiki'
+  warpDelay: 2
+  DaysInAdvanceWarning: 7
+  limitFutureMonthsAdd: 3
+  lastChanceDuration: 7
+  enableScheduledProcess: true
+  allowOpOverride: true
+  displayedTitles: true
+  warpEffect: default
+WarpOffsets:
+  X-WarpOffset: 0.5
+  Y-WarpOffset: 1
+  Z-WarpOffset: -0.5
+WarpSigns:
+  enableWarpSigns: true
+  enableWarpSignDelay: false
+WarpPlates:
+  enableWarpPlates: true
+  allowWoodPlates: false
+  allowStonePlates: false
+  allowIronPlates: true
+  allowGoldPlates: true
+WarpButtons:
+  enableWarpButtons: true
+  enableWarpButtonDelay: false
+  allowWoodButton: true
+  allowStoneButton: true
